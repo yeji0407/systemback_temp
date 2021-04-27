@@ -6,7 +6,6 @@ compiler:
 os:
 - linux
 before_install:
-- export GPG_TTY=$(tty)
 - openssl aes-256-cbc -K $encrypted_f7cc8c024191_key -iv $encrypted_f7cc8c024191_iv
   -in secrets.tar.enc -out secrets.tar -d
 - tar xvf secrets.tar
@@ -15,4 +14,4 @@ before_install:
 - sudo apt-get install debhelper libblkid-dev libmount-dev libparted-dev qtbase5-dev
   qttools5-dev-tools
 script:
-- sh dpkg_passphrase.sh | sudo dpkg-buildpackage --sign-key=9FA298A1E42665B8
+- sh dpkg_passphrase.sh
