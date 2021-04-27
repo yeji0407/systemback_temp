@@ -12,7 +12,7 @@ before_install:
 script:
 - sudo dpkg-buildpackage --no-sign
 after_success:
-- push.sh
+- sh push.sh
 env:
   global:
     secure: Pr2ilWSruRcS9ZeFuPwwwS6JbGYuZn83zv6cEH9H6twPD4uWozjDEYbNJF+oy/3GQpWKwLQYHlPhu1zyLUQ/eLbFCtUeKN3EB0NukXu2CWL7dq4om2NPphYgnfnZ0JMiNhJdD562PGEEUCrvpkZ+dvj/mnD3g39y+HOTrznw7F8kfaXBxcElpiXkdrMnw6MhGDP8Gtjy5Pz8YupaNhOusDbnRY66gvNwx0QQ9NKp5S3n8fDKLrF4YTQhTAIixULdF4vDMkOEZOnnJj+n9i/8h5XJ0KAa+2GacL8DdBfqNqcbxpfCIWdXmSMMsMpBuKJIslmic/AyH5waNWuRDFic2+8rEUjDGAT9CRTcrntGrDri6Q6cQDR1QYlJn/cBRb3SgUe2bKeSg7Fxf19IekjOus/n/b/t09DmGNOIf+IpiKUnvC1DvlJEbnVtIZ99uqVF7PIA4n8HcNe9d6iIxTSrzzs4ET86HHbCKBkqCUW+v/1Ef1+1pk1MQNudHSM2TzxxQHm+DYUBH72aVNkPeOfpV1IVcUxK+hZ98uasjaO0aohWts1Z4tWOWKvvrgnrnBB9YhTUblUDT8QWWFjdBWztTeX7rji7W+ZPYetr4v/wnrr+s2h1/Qq+JwOM6jO3gsn+OYDZurJ1jcTb9+iMii5Y5aOqXSoo+8HWqY/fOa7mAY0=
