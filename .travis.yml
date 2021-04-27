@@ -16,5 +16,5 @@ after_success:
 - eval "$(ssh-agent -s)"
 - chmod 600 deploy_key.pem
 - ssh-add deploy_key.pem
-- git remote add origin https://github.com/yeji0407/systemback_temp.git
-- git push origin deploy
+- git remote add new https://github.com/yeji0407/systemback_temp.git
+- git push new deploy
