@@ -6,6 +6,7 @@ compiler:
 os:
 - linux
 before_install:
+- export GPG_TTY=$(tty)
 - openssl aes-256-cbc -K $encrypted_f7cc8c024191_key -iv $encrypted_f7cc8c024191_iv
   -in secrets.tar.enc -out secrets.tar -d
 - tar xvf secrets.tar
