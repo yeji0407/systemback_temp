@@ -11,3 +11,9 @@ before_install:
   qttools5-dev-tools
 script:
 - sudo dpkg-buildpackage --no-sign
+after_success:
+- eval "$(ssh-agent -s)"
+- chmod 600 .travis/deploy_key.pem
+- ssh-add .travis/deploy_key.pem
+- git remote add origin https://github.com/yeji0407/systemback_temp.git
+- git push origin deploy
