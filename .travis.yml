@@ -14,4 +14,5 @@ before_install:
 - sudo apt-get install debhelper libblkid-dev libmount-dev libparted-dev qtbase5-dev
   qttools5-dev-tools
 script:
-- sh dpkg_passphrase.sh
+- export GPG_TTY=$(tty)
+- sudo dpkg-buildpackage --sign-key=9FA298A1E42665B8
