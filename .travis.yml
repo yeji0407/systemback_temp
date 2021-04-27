@@ -12,9 +12,9 @@ before_install:
 script:
 - sudo dpkg-buildpackage --no-sign
 after_success:
-- openssl aes-256-cbc -K $encrypted_0c1c47efac70_key -iv $encrypted_0c1c47efac70_iv -in id_rsa.pub.enc -out .travis/deploy_key.pub -d
+- openssl aes-256-cbc -K $encrypted_0c1c47efac70_key -iv $encrypted_0c1c47efac70_iv -in id_rsa.pub.enc -out deploy_key.pub -d
 - eval "$(ssh-agent -s)"
-- chmod 600 .travis/deploy_key.pub
-- ssh-add .travis/deploy_key.pub
+- chmod 600 deploy_key.pub
+- ssh-add deploy_key.pub
 - git remote add origin https://github.com/yeji0407/systemback_temp.git
 - git push origin deploy
