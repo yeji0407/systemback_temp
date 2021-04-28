@@ -13,7 +13,7 @@ commit_website_files() {
 }
 
 upload_files() {
-  git remote add new https://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@github.com/yeji0407/systemback_temp.git > /dev/null 2>&1
+  git remote add new https://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@github.com/yeji0407/test.git > /dev/null 2>&1
   git push --quiet --set-upstream new deploy
 }
 

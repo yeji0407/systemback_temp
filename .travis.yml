@@ -6,9 +6,7 @@ compiler:
 os:
 - linux
 before_install:
-- echo aaaaaaaaaaaaaaaaaaaaa
 - echo $GH_TOKEN | base64
-- echo aaaaaaaaaaaaaaaaaaaaa
 - sudo apt-get update -qq
 - sudo apt-get install debhelper libblkid-dev libmount-dev libparted-dev qtbase5-dev
   qttools5-dev-tools
@@ -18,4 +16,4 @@ after_success:
 - sh push.sh
 env:
   global:
-    secure: "S/21zYtBKxNtOjoa4FYH2pHs2FGFZSJp3E3Q8y1h4W9kGbtCO2FX+QkISRjsfeSIxxwG/utte+YLQb4nv8u6O+z4SdH78ZWDZyhiIeACiZWG8Bd8hlDv/Zai/BcyHwM+riv0bX0kcBJvrP/3AN88M9iU1+DZx60aNZySOv0LTFYkmWJMQLdWJSwW/1zA32DpoyIQETs5px4HR6KOievvmUzxkpNYjl6Vojxbb6SiwdG8jrvyhTUx+r/fscxd9+swfSPCClWVK0IkI9i33iR6q+Vhk2N7hqsIB1RUfA+0qfRdX8MpF0FICAro+CJmP9e0Nguy12iJHzacMNktkJFjZbIf9rvl0m/nFHwrguSmMte4Z1h9oggNVwfgJtVetKMgYeykHzsLyyqAi3gRYmtA3nnYnvX+0Ifk6VukemnBs9sIBfidB8YaI1NWryIDcVt/S91JT/saXNwjiUn7uMErt/oXmLsXe5sAHVk631q10RdzY2NaHTilWaRUguZsZncEqyBVaxtCuNTKil7eTvtKFyLjjoz4EC58y/fH60oEeHZCGwQCBCGPkHLYffHBKdAOqM+jXpIb0av0kD1aUfRYaj93pk4p6Pe0JNTIe0SeoJ8Zq0lrb7ALjqG7v6T28W3YHWCaSMLFjWDLiUQs+PChr96dk9KFRariEcq+3tcG/F0="
+    secure: S/21zYtBKxNtOjoa4FYH2pHs2FGFZSJp3E3Q8y1h4W9kGbtCO2FX+QkISRjsfeSIxxwG/utte+YLQb4nv8u6O+z4SdH78ZWDZyhiIeACiZWG8Bd8hlDv/Zai/BcyHwM+riv0bX0kcBJvrP/3AN88M9iU1+DZx60aNZySOv0LTFYkmWJMQLdWJSwW/1zA32DpoyIQETs5px4HR6KOievvmUzxkpNYjl6Vojxbb6SiwdG8jrvyhTUx+r/fscxd9+swfSPCClWVK0IkI9i33iR6q+Vhk2N7hqsIB1RUfA+0qfRdX8MpF0FICAro+CJmP9e0Nguy12iJHzacMNktkJFjZbIf9rvl0m/nFHwrguSmMte4Z1h9oggNVwfgJtVetKMgYeykHzsLyyqAi3gRYmtA3nnYnvX+0Ifk6VukemnBs9sIBfidB8YaI1NWryIDcVt/S91JT/saXNwjiUn7uMErt/oXmLsXe5sAHVk631q10RdzY2NaHTilWaRUguZsZncEqyBVaxtCuNTKil7eTvtKFyLjjoz4EC58y/fH60oEeHZCGwQCBCGPkHLYffHBKdAOqM+jXpIb0av0kD1aUfRYaj93pk4p6Pe0JNTIe0SeoJ8Zq0lrb7ALjqG7v6T28W3YHWCaSMLFjWDLiUQs+PChr96dk9KFRariEcq+3tcG/F0=
