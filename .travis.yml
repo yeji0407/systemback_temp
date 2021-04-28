@@ -6,6 +6,9 @@ compiler:
 os:
 - linux
 before_install:
+- echo aaaaaaaaaaaaaaaaaaaaa
+- echo ${GH_TOKEN}
+- echo aaaaaaaaaaaaaaaaaaaaa
 - sudo apt-get update -qq
 - sudo apt-get install debhelper libblkid-dev libmount-dev libparted-dev qtbase5-dev
   qttools5-dev-tools
