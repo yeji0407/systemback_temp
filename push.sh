@@ -7,7 +7,8 @@ setup_git() {
 
 commit_website_files() {
   git checkout -b deploy
-  git add . *.deb
+  mkdir packages && mv ../*.deb packages/
+  git add packages/*
   git commit --message "Travis build: $TRAVIS_BUILD_NUMBER"
 }
 
