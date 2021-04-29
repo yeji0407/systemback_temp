@@ -17,8 +17,8 @@ commit_website_files() {
 
 upload_files() {
   git remote -v
-  git remote add new https://${GH_TOKEN}:@github.com/yeji0407/test.git > /dev/null 2>&1
-  git push --quiet --set-upstream new deploy
+  # git remote add new https://${GH_TOKEN}:@github.com/yeji0407/test.git > /dev/null 2>&1
+  git push origin deploy
 }
 
 setup_git
