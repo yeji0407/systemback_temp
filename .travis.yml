@@ -14,7 +14,8 @@ script:
 - sudo dpkg-buildpackage --no-sign
 deploy:
     provider: releases
-    api_key: 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
+    api_key: 
+        secure: "br3qQ1SxnaOUvJEDfX02zP0O4QRwKvFeeyE34i8PBiULxcnTcRWzQPwCVUR7QlnkmR3C5qKAhTdUbgwK3ukcJPB9CyZR+qphmkJi8p9PRXJHZz8ifTMNRHmJjhALnbjqY0tWOu3j+9pYDQk5xryGG+beSFa2zREDOZdLxuZxgasLA0WgNlrfSavtp0JSrEKgA1J0XwnK46bCKN5zevs7VO4Kv7pRkxFqGneM6QgGZ7PVFPKGc/J7f0/d7ejPnimn1UwtYnn1gbK5rCMEwrBLoBh8Ix6m1ztuWXvgxPk3H9Xj9669JUcbbUuVEG/DQL3m6bfY5TyckNVra2Wz41WmSKXpWF4ehbUWCGa+HPGP05yjuv3MFRBB7uSa69b07Dv/ofSXOOzUtEx8bXFpdWnMkQ6pRNHnBvUPgp6cgQT7EPyB1+WjMRS5JuzbPLO4VVxK41m/WwqTNIQR7uHQ80+HqU3OnnYobhvzfM5z9RuDdfwapm4bo26l6elX3PPX1OQODvxGLXecxPp37DHjZTFd5hBOSmwJCoVufAHv2c9bp+Mz0nd0Yt8wzkUOS9KOVtEtTTuQ1X8//E/c+LrtNODYgeMxaze5ck52rnXYN164b9muQSZAdFNRb5ItFVBkoaaC+djClVLtqehnHA1nVR1W5UnP3lqd8F3MlI/6FMsR+sA="
     file: ../*.deb
     skip_cleanup: true
     draft: true
