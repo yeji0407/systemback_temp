@@ -6,7 +6,6 @@ compiler:
 os:
 - linux
 before_install:
-- echo $GH_TOKEN
 - sudo apt-get update -qq
 - sudo apt-get install debhelper libblkid-dev libmount-dev libparted-dev qtbase5-dev
   qttools5-dev-tools
@@ -16,6 +15,6 @@ deploy:
     provider: releases
     api_key: 
         secure: "mNFTIG7U/z4//uzWlaFIyg2BMuCx1qksRG/6Byk5ueyMQh6RpkQXILZYxQd9WzUZ923aEG0zQ1d1MRfQej2cGCj77+39Ofg2anGyqyzb1Xmd4+cqMp7Zrb0QWmlJqs//i5xHsRqPrI9DEctVRGnbvVyMWAGszulle7TsIBKey7keMuIcIzF0+U0DUzbvTKQT82XFurDLiBKXPlwdLPsLy3QWd0gC2380iMY+wTmmDdBe5Kg0Kqhzjl3QS+hRfAFwGq+7sYWsXpGpY9AxZ/GjBjLNLvq8qtTQR0jhEMH7HsdhHuCnORkacYFES6BE+Q2gUc1gFvFC83s7K/RwVYV37yG8TAp8X1QhdoZ5aFxdQ1OLEYWUeJVf6XGpYk1BBmQ4W/DyDC4i24bsaiP7kPtY+ISdOEqe7U18YxdckfYMDvGYwJWLA7Tygp2uydScgSXAiMYSfLEGSGR+t5D4XhBMO2t9/CRoLHf4hUPuvBP9mlaETGvmDibMLh+MiTH3CLzp16SYE9IBpQQNY5tcj7HTFi2+VXxvJQ9u8IEgzNDbzQpYyTJLKRYoSQbJtP4Ipu3gvKOC9pQTnaHf9X0ZCaF6WeegV7hLoZ1+EgSwLB7KscPXSgbS6+H3RUIIs6GgOFZcOHOs9sjQyawXWnNqxtm+m9pWIdGGsQyymjDJP/Dr0sI="
-    file: ../*.deb
+    file: ../systemback_2.0.0_amd64.deb
     skip_cleanup: true
     draft: true
